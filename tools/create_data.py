@@ -271,8 +271,8 @@ def create_groundtruth_database(data_path,
 
 
 if __name__ == '__main__':
-    # create_kitti_info_file('/home/shigenaka/workspace/SA-SSD/data/kitti')
-    # create_reduced_point_cloud('/home/shigenaka/workspace/SA-SSD/data/kitti')
+    create_kitti_info_file('/home/shigenaka/workspace/SA-SSD/data/kitti')
+    create_reduced_point_cloud('/home/shigenaka/workspace/SA-SSD/data/kitti')
 
     create_groundtruth_database(data_path='/home/shigenaka/workspace/SA-SSD/data/kitti', \
                                 info_path='/home/shigenaka/workspace/SA-SSD/data/kitti/kitti_infos_train.pkl', \
