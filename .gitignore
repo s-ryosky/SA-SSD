@@ -25,6 +25,7 @@
 # Specific directory #
 saved_model_vehicle/
 
-data/
-jobs/
-docker/run_*.sh
+/data/
+/jobs/
+/docker/run_*.sh
+/models/
