@@ -15,6 +15,13 @@ from mmdet.datasets import get_dataset
 from mmdet.models import build_detector
 from tools.train_utils.optimization import build_optimizer, build_scheduler
 
+from numba.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning, NumbaWarning
+import warnings
+warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
+warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
+warnings.simplefilter('ignore', category=NumbaWarning)
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a detector')
     parser.add_argument('config', help='train config file path')
